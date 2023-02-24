@@ -20,7 +20,7 @@ public class BaseTestingTasks extends BaseTest {
     }
 
     protected void checkTaskResult(String taskResult) {
-        String msg = "Answer text block is empty. Possibly \"Check Results\" button didn't pushed";
+        String msg = "Answer text block is empty. Possibly \"Check Results\" button wasn't pushed";
         Assert.assertFalse(taskResult.isEmpty(), msg);
         Assert.assertFalse(taskResult.contains(Constants.NOT_OK_ANSWER));
     }
