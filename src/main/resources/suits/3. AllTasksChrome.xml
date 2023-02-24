@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="SeleniumTestingTasks" verbose="1" >
+    <parameter name="browser" value="chrome"/>
+    <test name="Tasks" >
+        <classes>
+            <class name="TestingTasksTests.FirstFourOddTasks" />
+            <class name="TestingTasksTests.OtherOddTasks" />
+            <class name="TestingTasksTests.FirstFourEvenTasks" />
+            <class name="TestingTasksTests.OtherEvenTasks" />
+        </classes>
+    </test>
+</suite>
