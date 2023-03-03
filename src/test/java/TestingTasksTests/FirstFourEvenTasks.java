@@ -1,19 +1,26 @@
 package TestingTasksTests;
 
-import Base.BaseTestingTasks;
+import Base.BaseTest;
 import org.openqa.selenium.JavascriptException;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class FirstFourEvenTasks extends BaseTestingTasks {
+public class FirstFourEvenTasks extends BaseTest {
 
     // (1)
     // Second Task
     @Test
     public void setTextToNameTest() {
+        logger.info("Set name");
         page.setNameValue("Kilgore Trout");
+
+        logger.info("Click button \"Check results\"");
         page.pushCheckResults();
+
+        logger.info("Checking results ...");
         checkTaskResult(page.getTaskResult(2));
+
+        logger.info("Test PASSED");
     }
 
     // (2)

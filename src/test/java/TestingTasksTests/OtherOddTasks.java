@@ -1,6 +1,6 @@
 package TestingTasksTests;
 
-import Base.BaseTestingTasks;
+import Base.BaseTest;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -9,7 +9,7 @@ import utility.Constants;
 
 import java.time.Duration;
 
-public class OtherOddTasks extends BaseTestingTasks {
+public class OtherOddTasks extends BaseTest {
 
     // Ninth Task
     @Test

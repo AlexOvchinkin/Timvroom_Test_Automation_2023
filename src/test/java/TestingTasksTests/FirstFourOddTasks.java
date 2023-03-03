@@ -1,13 +1,13 @@
 package TestingTasksTests;
 
-import Base.BaseTestingTasks;
+import Base.BaseTest;
 import org.openqa.selenium.JavascriptException;
 import org.openqa.selenium.NoSuchElementException;
 import org.testng.Assert;
 import utility.Constants;
 import org.testng.annotations.Test;
 
-public class FirstFourOddTasks extends BaseTestingTasks {
+public class FirstFourOddTasks extends BaseTest {
 
     // (1)
     // First task

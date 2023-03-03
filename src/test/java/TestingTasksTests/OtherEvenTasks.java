@@ -1,18 +1,27 @@
 package TestingTasksTests;
 
-import Base.BaseTestingTasks;
+import Base.BaseTest;
 import org.testng.annotations.Test;
 import utility.Constants;
 
-public class OtherEvenTasks extends BaseTestingTasks {
+public class OtherEvenTasks extends BaseTest {
 
     // Tenth Task
     @Test
     public void redBoxTextTest() {
+        logger.info("Get Red Box text");
         String text = page.getRedBoxText();
+
+        logger.info("Set received text to Answer #10");
         page.setAnswerValue(text, 10);
+
+        logger.info("Click \"Check results\" button");
         page.pushCheckResults();
+
+        logger.info("Checking test result");
         checkTaskResult(page.getTaskResult(10));
+
+        logger.info("Test PASSED");
     }
 
     // Twelfth Task
